@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 10%;
+        background-color: rgba($color: #000000, $alpha: .5);
+        h1 {
+            text-align: center;
+        }
+    }
+    section {
+        min-height: 45%;
+    }
+    .up {
+        background-color: rgba($color: #d4ba27, $alpha: .3);
+        border: 2px solid red;
+    }
+    .down {
+        background-color: rgba($color: #31b8b1, $alpha: .3);
+        border: 2px solid blue;
+    }
+}
