@@ -1,0 +1,16 @@
+aside {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    background: linear-gradient(to bottom, yellow, blue);
+    img {
+        width: 100%;
+        border-radius: 3%;
+        display: inline-block;
+        padding: 20px;
+    }
+    #vs {
+        padding: 80px;
+    }
+}

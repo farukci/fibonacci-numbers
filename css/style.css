@@ -7,32 +7,59 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
+  font-size: 16px;
 }
 
 body header {
+  background: linear-gradient(to right, yellow, blue);
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 10%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 body header h1 {
   text-align: center;
+  font-size: 4rem;
 }
 
-body section {
-  min-height: 45%;
+.main {
+  display: flex;
+  flex-direction: row;
 }
 
-body .up {
-  background-color: rgba(212, 186, 39, 0.3);
-  border: 2px solid red;
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  background: linear-gradient(to bottom, yellow, blue);
 }
 
-body .down {
-  background-color: rgba(49, 184, 177, 0.3);
-  border: 2px solid blue;
+aside img {
+  width: 100%;
+  border-radius: 3%;
+  display: inline-block;
+  padding: 20px;
+}
+
+aside #vs {
+  padding: 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+}
+
+.container .up {
+  border: 4px solid green;
+  height: 50%;
+  width: 100%;
+}
+
+.container .down {
+  height: 50%;
+}
+
+.container .down iframe {
+  height: 100%;
 }
