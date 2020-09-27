@@ -4,7 +4,7 @@ function myFunc() {
         document.getElementById("result").innerHTML = "Please enter a positive number!"
     }
     else{
-        document.getElementById("result").innerHTML = order(num) + " element of the fibonacci sequence is " + myFibo(num);
+        document.getElementById("result").innerHTML = orderPrefix(num) + " element of the fibonacci sequence is " + myFibo(num);
     }
 }
 
@@ -19,10 +19,9 @@ function myFibo(n){
         }
         return fibo[n-1];
     }
-    // 1 1 2 3 5 8 13 21 34
 }
 
-function order(i) {
+function orderPrefix(i) {
     var j = i % 10,
         k = i % 100;
     if (j == 1 && k != 11) {
